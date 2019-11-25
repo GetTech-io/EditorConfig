@@ -1,6 +1,8 @@
-![.editorconfig Banner](https://media.githubusercontent.com/media/RehanSaeed/EditorConfig/master/Images/Banner.png)
+![.editorconfig Banner](https://media.githubusercontent.com/media/GetTech-io/EditorConfig/master/Images/Banner.png)
 
-A very generic [.editorconfig](https://github.com/RehanSaeed/EditorConfig/blob/master/.editorconfig) file supporting the following file types:
+A very generic [.editorconfig](https://github.com/GetTech-io/EditorConfig/blob/master/.editorconfig) file supporting the following file types:
+
+This is a fork of awesome https://github.com/RehanSaeed/EditorConfig repo. We made some changes for our preferences.
 
 - C# - .cs, .csx, .cake
 - Visual Basic - .vb
@@ -19,6 +21,11 @@ A very generic [.editorconfig](https://github.com/RehanSaeed/EditorConfig/blob/m
 Extensive code style settings for C# and VB.NET have been defined that require the latest C# features to be used.
 All C# related code styles are consistent with [StyleCop's](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) default styles.
 All .NET naming conventions are consistent with the .NET Framework Design Guideline's [Naming Guidelines](https://docs.microsoft.com/en-us/dotnet/standard/design-guidelines/naming-guidelines).
+
+Our changes
+ - We don't force _this_ prefix on field, property, method and event.
+ - We prefer using directives outside of namespace
+ - We prefer underscore for private fields. like __sampleField_
 
 # What is .editorconfig?
 

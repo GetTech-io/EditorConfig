@@ -1,7 +1,8 @@
-# Version: 1.3.2 (Using https://semver.org/)
-# Updated: 2019-08-04
-# See https://github.com/RehanSaeed/EditorConfig/releases for release notes.
-# See https://github.com/RehanSaeed/EditorConfig for updates to this file.
+# Version: 1.0.0 (Using https://semver.org/)
+# Updated: 2019-11-25
+# See https://github.com/GetTech-io/EditorConfig/releases for release notes.
+# See https://github.com/GetTech-io/EditorConfig for updates to this file.
+# Originally it is a fork of https://github.com/RehanSaeed/EditorConfig
 # See http://EditorConfig.org for more information about .editorconfig files.
 
 ##########################################
@@ -69,10 +70,10 @@ end_of_line = lf
 [*.{cs,csx,cake,vb}]
 # "this." and "Me." qualifiers
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#this-and-me
-dotnet_style_qualification_for_field = true:warning
-dotnet_style_qualification_for_property = true:warning
-dotnet_style_qualification_for_method = true:warning
-dotnet_style_qualification_for_event = true:warning
+dotnet_style_qualification_for_field = false:warning
+dotnet_style_qualification_for_property = false:warning
+dotnet_style_qualification_for_method = false:warning
+dotnet_style_qualification_for_event = false:warning
 # Language keywords instead of framework type names for type references
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#language-keywords
 dotnet_style_predefined_type_for_locals_parameters_members = true:warning
@@ -159,7 +160,7 @@ csharp_style_prefer_range_operator = true:warning
 # https://docs.microsoft.com/visualstudio/ide/editorconfig-language-conventions#miscellaneous-preferences
 csharp_style_deconstructed_variable_declaration = true:warning
 csharp_style_pattern_local_over_anonymous_function = true:warning
-csharp_using_directive_placement = inside_namespace:warning
+csharp_using_directive_placement = outside_namespace:warning
 csharp_prefer_static_local_function = true:warning
 csharp_prefer_simple_using_statement = false:warning
 
@@ -228,6 +229,9 @@ csharp_preserve_single_line_blocks = true
 # Styles
 ##########################################
 
+# camel_case_style - Define the camelCase style
+dotnet_naming_style.underscore_camel_case_style.capitalization = camel_case
+dotnet_naming_style.underscore_camel_case_style.required_prefix = _
 # camel_case_style - Define the camelCase style
 dotnet_naming_style.camel_case_style.capitalization = camel_case
 # pascal_case_style - Define the PascalCase style
@@ -319,7 +323,7 @@ dotnet_naming_rule.stylecop_instance_fields_must_be_private_rule.severity       
 dotnet_naming_symbols.stylecop_private_fields_group.applicable_accessibilities = private
 dotnet_naming_symbols.stylecop_private_fields_group.applicable_kinds           = field
 dotnet_naming_rule.stylecop_private_fields_must_be_camel_case_rule.symbols     = stylecop_private_fields_group
-dotnet_naming_rule.stylecop_private_fields_must_be_camel_case_rule.style       = camel_case_style
+dotnet_naming_rule.stylecop_private_fields_must_be_camel_case_rule.style       = underscore_camel_case_style
 dotnet_naming_rule.stylecop_private_fields_must_be_camel_case_rule.severity    = warning
 
 # Local variables must be camelCase
@@ -393,6 +397,7 @@ dotnet_naming_rule.parameters_rule.severity             = warning
 #
 # Copyright (c) 2017-2019 Muhammad Rehan Saeed
 # Copyright (c) 2019 Henry Gabryjelski
+# Copyright (c) 2019 Peter Herbel
 #
 # Permission is hereby granted, free of charge, to any
 # person obtaining a copy of this software and associated
