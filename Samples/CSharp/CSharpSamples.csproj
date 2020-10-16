@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Build">
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup Label="Package References">
+    <PackageReference Include="StyleCop.Analyzers" PrivateAssets="All" Version="1.1.118" />
+  </ItemGroup>
+
+</Project>
